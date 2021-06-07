@@ -17,7 +17,7 @@ function submitData(newName, newEmail) {
   };
 
   function fetchUser() {
-    const user = function fetch(userUrl, configObj)
+    const = fetch(userUrl, configObj)
     .then(function(response) {
       return response.json();
     })
