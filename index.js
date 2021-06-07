@@ -36,13 +36,13 @@ function submitData(newName, newEmail) {
 }
 
 function fetchUsers(userUrl, configObj) {
-  let users = fetch(userUrl, configObj)
+  let newUser = fetch(userUrl, configObj)
       .then(resp => resp.json())
-      .then(json => renderUsers(json.message));
-  return users;
+      .then(json => renderUsers(object));
+  return newUser;
   }
 
-function renderUsers(users) {
+function renderUsers(newUser) {
   const newUserId = newUser.id;
   const ul = document.createElement('ul');
   const li = document.createElement('li');
