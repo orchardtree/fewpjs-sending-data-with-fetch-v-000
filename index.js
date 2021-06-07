@@ -22,14 +22,13 @@ function submitData(newName, newEmail) {
     })
     .then(function(object) {
       console.log(object);
-      return object;
     })
     .catch(function(error) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
     });
 }
-/*
+
 function fetchUsers(newUser) {
   let users = fetch("http://localhost:3000/users")
       .then(resp => resp.json())
@@ -45,4 +44,4 @@ function renderUsers(users) {
   document.body.appendChild(ul);
   ul.appendChild(li);
   }
-*/
+
