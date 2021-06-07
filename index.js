@@ -38,8 +38,9 @@ function submitData(newName, newEmail) {
     li.innerHTML = newUserId;
     document.body.appendChild(ul);
     ul.appendChild(li);
-    return newUserId;
     console.log(newUserId);
+    return newUserId;
+
   }
   fetchUser();
 }
