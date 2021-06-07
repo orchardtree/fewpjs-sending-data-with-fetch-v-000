@@ -16,7 +16,6 @@ function submitData(newName, newEmail) {
     body: JSON.stringify(formData)
   };
 
-
   fetch("http://localhost:3000/users", configObj)
     .then(function(response) {
       return response.json();
