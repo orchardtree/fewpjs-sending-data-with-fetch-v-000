@@ -16,18 +16,18 @@ function submitData(newName, newEmail) {
     body: JSON.stringify(formData)
   };
 
-    return fetch(userUrl, configObj)
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(object) {
-      console.log(object);
-      renderUsers(object);
-    })
-    .catch(function(error) {
-      console.log(error.message);
-      renderErrors(error)
-    });
+  return fetch(userUrl, configObj)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(object) {
+    console.log(object);
+    renderUsers(object);
+  })
+  .catch(function(error) {
+    console.log(error.message);
+    renderErrors(error)
+  });
 }
 
 function renderUsers(newUser) {
