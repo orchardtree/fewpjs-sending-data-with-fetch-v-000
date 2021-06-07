@@ -41,8 +41,8 @@ function renderErrors(error) {
 }
 
 function renderListItem (item) {
-  if (!document.getElementById('userIds')) {
-    const ul = document.getElementById('userIds');
+  ul = if (!document.getElementById('userIds')) {
+    document.getElementById('userIds');
   }
   const li = document.createElement('li');
   li.innerHTML = item;
