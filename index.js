@@ -22,12 +22,12 @@ function submitData(newName, newEmail) {
     })
     .then(function(object) {
       console.log(object);
+      return object;
     })
     .catch(function(error) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
     });
-  fetchUsers(object);
 }
 /*
 function fetchUsers(newUser) {
