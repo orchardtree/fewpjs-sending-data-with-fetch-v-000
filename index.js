@@ -28,7 +28,7 @@ function submitData(newName, newEmail) {
       console.log(error.message);
     });
 
-  console.log(newUser);
+  //console.log(newUser);
   return newUser;
 }
 
