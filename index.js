@@ -29,7 +29,7 @@ function submitData(newName, newEmail) {
       console.log(error.message);
     });
   }
-  fetchUser();
+  return fetchUser();
   //console.log(newUser);
 }
 
