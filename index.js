@@ -39,6 +39,7 @@ function fetchUsers(userUrl, configObj) {
   let newUser = fetch(userUrl, configObj)
       .then(resp => resp.json())
       .then(json => renderUsers(object));
+      console.log(object)
   return newUser;
   }
 
