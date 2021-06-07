@@ -45,10 +45,10 @@ function renderListItem (item) {
     const newUl = document.createElement('ul');
     document.body.appendChild(newUl).id = "userIds";
   }
-  //const ul = document.getElementById('userIds');
-  //const li = document.createElement('li');
-  //li.innerHTML = item;
+  const ul = document.getElementById('userIds');
+  const li = document.createElement('li');
+  li.innerHTML = item;
   //document.body.appendChild(ul);
-  //ul.appendChild(li);
-  //console.log(item);
+  ul.appendChild(li);
+  console.log(item);
 }
