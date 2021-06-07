@@ -30,7 +30,6 @@ function submitData(newName, newEmail) {
     });
   }
   return fetchUser();
-  //console.log(newUser);
 }
 
 /*
