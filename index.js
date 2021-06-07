@@ -40,6 +40,7 @@ function submitData(newName, newEmail) {
     document.body.appendChild(ul);
     ul.appendChild(li);
     console.log(newUserId);
+    return newUserId;
   }
 
   function renderErrors(error) {
@@ -50,6 +51,7 @@ function submitData(newName, newEmail) {
     document.body.appendChild(ul);
     ul.appendChild(li);
     console.log(errorMsg);
+    return errorMsg;
   }
   fetchUser();
 }
