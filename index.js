@@ -29,9 +29,9 @@ function submitData(newName, newEmail) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
     });
-    fetchUsers(newUser);
+    //fetchUsers(newUser);
   }
-
+/*
 function fetchUsers(newUser) {
   let users = fetch("http://localhost:3000/users")
       .then(resp => resp.json())
@@ -47,3 +47,4 @@ function renderUsers(users) {
   document.body.appendChild(ul);
   ul.appendChild(li);
   }
+*/
