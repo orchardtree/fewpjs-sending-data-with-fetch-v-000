@@ -46,18 +46,16 @@ function submitData(newName, newEmail) {
   }
 
 function fetchUsers() {
-  const usersUrl = "http://localhost:3000/users"
-  let users = fetch(usersUrl)
+  let users = fetch("http://localhost:3000/users")
       .then(resp => resp.json())
       .then(json => renderUsers(json.message));
   return users;
   }
 
 function renderUsers(users) {
-  const body = document.querySelector('body');
-  for (const user in users) {
-    const p = document.createElement('p');
-    p.innerHTML = user;
-    body.appendChild(p);
-    }
+  const ul = document.createElement('ul');
+  const li = document.createElement('li');
+  li.innerHTML = newUserId;
+  document.body.appendChild(ul);
+  ul.appendChild(li);
   }
