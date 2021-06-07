@@ -16,15 +16,6 @@ function submitData(newName, newEmail) {
     body: JSON.stringify(formData)
   };
 
-  fetchUsers(userUrl, configObj)
-  function fetchUsers(userUrl, configObj) {
-    let users = fetch(userUrl, configObj)
-        .then(resp => resp.json())
-        .then(json => renderUsers(json.message));
-    return users;
-    }
-
-/*
   fetch(userUrl, configObj)
     .then(function(response) {
       return response.json();
@@ -36,10 +27,15 @@ function submitData(newName, newEmail) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
     });
-*/
 }
 
-
+fetchUsers(userUrl, configObj)
+function fetchUsers(userUrl, configObj) {
+  let users = fetch(userUrl, configObj)
+      .then(resp => resp.json())
+      .then(json => renderUsers(json.message));
+  return users;
+  }
 
 function renderUsers(users) {
   const newUserId = newUser.id;
