@@ -29,6 +29,15 @@ function submitData(newName, newEmail) {
       console.log(error.message);
     });
   }
+
+  function renderUsers(users) {
+    const newUserId = newUser.id;
+    const ul = document.createElement('ul');
+    const li = document.createElement('li');
+    li.innerHTML = newUserId;
+    document.body.appendChild(ul);
+    ul.appendChild(li);
+  }
   return fetchUser();
 }
 
