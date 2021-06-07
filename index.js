@@ -42,7 +42,7 @@ function renderErrors(error) {
 
 function renderListItem (item) {
   if (!!document.getElementById('userIds')) {
-    document.getElementById('userIds');
+      document.getElementById('userIds');
     } else {
       document.createElement('ul');
       document.body.appendChild(ul).id = "userIds";
