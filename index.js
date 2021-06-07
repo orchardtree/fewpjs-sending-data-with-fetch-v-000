@@ -51,7 +51,7 @@ function submitData(newName, newEmail) {
     document.body.appendChild(ul);
     ul.appendChild(li);
     console.log(errorMsg);
-    return errorMsg;
+    return error;
   }
   fetchUser();
 }
