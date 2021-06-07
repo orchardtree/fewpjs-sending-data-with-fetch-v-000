@@ -32,20 +32,21 @@ function submitData(newName, newEmail) {
 
 function renderUsers(newUser) {
   const newUserId = newUser.id;
-  const ul = document.createElement('ul');
-  const li = document.createElement('li');
-  li.innerHTML = newUserId;
-  document.body.appendChild(ul);
-  ul.appendChild(li);
-  console.log(newUserId);
+  renderListItem(newUserId)
 }
 
 function renderErrors(error) {
   const errorMsg = error.message
+  renderListItem(errorMsg)
+}
+
+
+function renderListItem (item) {
   const ul = document.createElement('ul');
   const li = document.createElement('li');
   li.innerHTML = errorMsg;
   document.body.appendChild(ul);
   ul.appendChild(li);
   console.log(errorMsg);
+}
 }
