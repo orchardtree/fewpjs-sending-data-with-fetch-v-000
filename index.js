@@ -38,7 +38,6 @@ function submitData(newName, newEmail) {
     document.body.appendChild(ul);
     ul.appendChild(li);
   }
-  return fetchUser();
 }
 
 /*
