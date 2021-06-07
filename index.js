@@ -1,5 +1,5 @@
 // Add your code here
-const test = function submitData(newName, newEmail) {
+const submitData = function(newName, newEmail) {
   const userUrl = "http://localhost:3000/users"
 
   const formData = {
