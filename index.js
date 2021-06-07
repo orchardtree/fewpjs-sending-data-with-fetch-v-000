@@ -42,14 +42,13 @@ function renderErrors(error) {
 
 function renderListItem (item) {
   if (!!document.getElementById('userIds')) {
-      document.getElementById('userIds');
+      let ul = document.getElementById('userIds');
     } else {
-      const ul = document.createElement('ul');
+      let ul = document.createElement('ul');
       document.body.appendChild(ul).id = "userIds";
-      return ul;
   }
 
-  //const ul = document.createElement('ul');
+  const ul = document.getElementById('userIds');
   const li = document.createElement('li');
   li.innerHTML = item;
   //document.body.appendChild(ul);
