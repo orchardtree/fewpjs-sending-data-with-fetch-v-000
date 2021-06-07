@@ -41,5 +41,15 @@ function submitData(newName, newEmail) {
     ul.appendChild(li);
     console.log(newUserId);
   }
+
+  function renderErrors(error) {
+    const errorMsg = error.message
+    const ul = document.createElement('ul');
+    const li = document.createElement('li');
+    li.innerHTML = errorMsg;
+    document.body.appendChild(ul);
+    ul.appendChild(li);
+    console.log(errorMsg);
+  }
   fetchUser();
 }
