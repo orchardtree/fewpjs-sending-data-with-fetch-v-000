@@ -43,9 +43,9 @@ function renderErrors(error) {
 function renderListItem (item) {
   const ul = document.createElement('ul');
   const li = document.createElement('li');
-  li.innerHTML = errorMsg;
+  li.innerHTML = item;
   document.body.appendChild(ul);
   ul.appendChild(li);
-  console.log(errorMsg);
+  console.log(item);
 }
 }
