@@ -24,13 +24,11 @@ function submitData(newName, newEmail) {
     .then(function(object) {
       console.log(object);
       renderUsers(object);
-      return object;
     })
     .catch(function(error) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
       renderErrors(error)
-      return error;
     });
   }
 
