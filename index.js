@@ -16,7 +16,8 @@ function submitData(newName, newEmail) {
     body: JSON.stringify(formData)
   };
 
-  const newUser = fetch(userUrl, configObj)
+  function fetchUser() {
+    fetch(userUrl, configObj)
     .then(function(response) {
       return response.json();
     })
@@ -27,6 +28,7 @@ function submitData(newName, newEmail) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
     });
+  }
 
   //console.log(newUser);
   return newUser;
