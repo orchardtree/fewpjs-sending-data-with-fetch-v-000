@@ -40,7 +40,6 @@ function renderErrors(error) {
   renderListItem(errorMsg)
 }
 
-
 function renderListItem (item) {
   const ul = document.createElement('ul');
   const li = document.createElement('li');
