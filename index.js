@@ -29,6 +29,7 @@ function submitData(newName, newEmail) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
     });
+    return object;
   }
 
   function renderUsers(newUser) {
