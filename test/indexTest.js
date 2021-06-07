@@ -10,7 +10,7 @@ describe( "submitData()", () => {
   beforeEach( function () {
     window.fetch = require( 'node-fetch' );
 
-    rando = 1//Math.ceil( Math.random() * 1000 )
+    rando = Math.ceil( Math.random() * 1000 )
 
 
 
