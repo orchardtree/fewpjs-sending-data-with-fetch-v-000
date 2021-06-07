@@ -29,6 +29,10 @@ function submitData(newName, newEmail) {
     });
 }
 
+
+
+
+/*
 fetchUsers(userUrl, configObj)
 function fetchUsers(userUrl, configObj) {
   let users = fetch(userUrl, configObj)
@@ -45,3 +49,4 @@ function renderUsers(users) {
   document.body.appendChild(ul);
   ul.appendChild(li);
   }
+*/
