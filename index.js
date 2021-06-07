@@ -18,6 +18,7 @@ function submitData(newName, newEmail) {
     body: JSON.stringify(formData)
   };
 
+/*
   fetch(userUrl, configObj)
     .then(function(response) {
       return response.json();
@@ -29,9 +30,10 @@ function submitData(newName, newEmail) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
     });
+*/
 }
 
-function fetchUsers(newUser) {
+function fetchUsers(userUrl, configObj) {
   let users = fetch("http://localhost:3000/users")
       .then(resp => resp.json())
       .then(json => renderUsers(json.message));
