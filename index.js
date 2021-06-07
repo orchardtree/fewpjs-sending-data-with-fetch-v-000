@@ -2,6 +2,8 @@
 
 
 function submitData(newName, newEmail) {
+  const userUrl = "http://localhost:3000/users"
+
   const formData = {
     name: newName,
     email: newEmail
@@ -16,7 +18,7 @@ function submitData(newName, newEmail) {
     body: JSON.stringify(formData)
   };
 
-  fetch("http://localhost:3000/users", configObj)
+  fetch(userUrl, configObj)
     .then(function(response) {
       return response.json();
     })
