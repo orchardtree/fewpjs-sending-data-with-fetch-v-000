@@ -47,7 +47,7 @@ function renderListItem (item) {
     } else {
     document.getElementById('userIds');
   }
-  */
+  
   //const ul = document.createElement('ul');
   const li = document.createElement('li');
   li.innerHTML = item;
