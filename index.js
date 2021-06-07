@@ -17,9 +17,10 @@ function submitData(newName, newEmail) {
   };
 
   fetch(userUrl, configObj)
-    .then(function(response) {
-      return response.json();
-    })
+    //.then(function(response) {
+    //  return response.json();
+    //})
+    .then(resp => resp.json())
     .then(function(object) {
       console.log(object);
     })
