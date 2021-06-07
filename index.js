@@ -43,12 +43,13 @@ function renderErrors(error) {
 function renderListItem (item) {
   let ul = if (!document.getElementById('userIds')) {
     document.createElement('ul');
+    document.body.appendChild(ul).id = "userIds";
     } else {
     document.getElementById('userIds');
   }
   const li = document.createElement('li');
   li.innerHTML = item;
-  document.body.appendChild(ul).id = "userIds";
+  
   ul.appendChild(li);
   console.log(item);
 }
