@@ -41,9 +41,10 @@ function renderErrors(error) {
 }
 
 function renderListItem (item) {
-  if (!!document.getElementById('userIds')) {
+  if (!document.getElementById('userIds')) {
     const newUl = document.createElement('ul');
     document.body.appendChild(newUl).id = "userIds";
+    console.log()
   }
   const ul = document.getElementById('userIds');
   const li = document.createElement('li');
