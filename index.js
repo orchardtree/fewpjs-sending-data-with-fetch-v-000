@@ -24,11 +24,13 @@ function submitData(newName, newEmail) {
     .then(function(object) {
       console.log(object);
       renderUsers(object);
+      return object;
     })
     .catch(function(error) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
       renderErrors(error)
+      return error;
     });
   }
 
@@ -40,7 +42,6 @@ function submitData(newName, newEmail) {
     document.body.appendChild(ul);
     ul.appendChild(li);
     console.log(newUserId);
-    return newUser;
   }
 
   function renderErrors(error) {
@@ -51,7 +52,6 @@ function submitData(newName, newEmail) {
     document.body.appendChild(ul);
     ul.appendChild(li);
     console.log(errorMsg);
-    return error;
   }
   fetchUser();
 }
