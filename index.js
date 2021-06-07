@@ -40,5 +40,5 @@ function submitData(newName, newEmail) {
     ul.appendChild(li);
     console.log(newUserId);
   }
-  //fetchUser();
+  fetchUser();
 }
