@@ -46,6 +46,7 @@ function renderListItem (item) {
     } else {
       const ul = document.createElement('ul');
       document.body.appendChild(ul).id = "userIds";
+      return (ul)
   }
 
   //const ul = document.createElement('ul');
