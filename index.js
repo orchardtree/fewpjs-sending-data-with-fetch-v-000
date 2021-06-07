@@ -27,7 +27,7 @@ function submitData(newName, newEmail) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
     });
-    //fetchUsers(newUser);
+    fetchUsers(object);
   }
 /*
 function fetchUsers(newUser) {
