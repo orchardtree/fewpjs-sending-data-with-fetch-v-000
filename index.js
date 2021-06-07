@@ -41,10 +41,12 @@ function renderErrors(error) {
 }
 
 function renderListItem (item) {
-  const ul = document.createElement('ul');
+  if (!document.getElementById('userIds')) {
+    const ul = document.getElementById('userIds');
+  }
   const li = document.createElement('li');
   li.innerHTML = item;
-  document.body.appendChild(ul).id = "TEST";
+  document.body.appendChild(ul).id = "userIds";
   ul.appendChild(li);
   console.log(item);
 }
