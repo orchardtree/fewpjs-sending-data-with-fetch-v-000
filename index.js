@@ -52,6 +52,6 @@ function renderListItem (item) {
   const li = document.createElement('li');
   li.innerHTML = item;
   //document.body.appendChild(ul);
-  document.getElementById('userIds').appendChild(li);
+  ul.appendChild(li);
   console.log(item);
 }
