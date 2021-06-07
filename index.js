@@ -32,7 +32,7 @@ function submitData(newName, newEmail) {
 
         const ul = document.createElement('ul');
         const li = document.createElement('li');
-        li.innerHTML = Number(newUserId);
+        li.innerHTML = newUserId;
         document.body.appendChild(ul);
         ul.appendChild(li);
 
