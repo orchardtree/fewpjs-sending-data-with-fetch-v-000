@@ -27,8 +27,8 @@ function submitData(newName, newEmail) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
     });
-    fetchUsers(object);
-  }
+  fetchUsers(object);
+}
 /*
 function fetchUsers(newUser) {
   let users = fetch("http://localhost:3000/users")
