@@ -30,7 +30,6 @@ function submitData(newName, newEmail) {
       console.log(error.message);
       renderErrors(error)
     });
-    return user;
   }
 
   function renderUsers(newUser) {
