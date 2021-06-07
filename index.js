@@ -1,10 +1,11 @@
 // Add your code here
+const formData = {
+  name: newName,
+  email: newEmail
+  };
 
 function submitData(newName, newEmail) {
-  const formData = {
-    name: newName,
-    email: newEmail
-    };
+
 
   const configObj = {
     method: "POST",
