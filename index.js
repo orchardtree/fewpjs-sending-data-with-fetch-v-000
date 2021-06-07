@@ -26,7 +26,6 @@ function submitData(newName, newEmail) {
       renderUsers(object);
     })
     .catch(function(error) {
-      alert("Bad things! Ragnarők!");
       console.log(error.message);
       renderErrors(error)
     });
