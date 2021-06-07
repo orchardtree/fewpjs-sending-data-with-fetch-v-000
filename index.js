@@ -29,9 +29,8 @@ function submitData(newName, newEmail) {
       console.log(error.message);
     });
   }
-
+  fetchUser();
   //console.log(newUser);
-  return newUser;
 }
 
 /*
