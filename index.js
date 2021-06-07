@@ -18,6 +18,8 @@ function submitData(newName, newEmail) {
     body: JSON.stringify(formData)
   };
 
+  fetchUsers(userUrl, configObj)
+
 /*
   fetch(userUrl, configObj)
     .then(function(response) {
