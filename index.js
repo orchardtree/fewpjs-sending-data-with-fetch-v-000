@@ -45,7 +45,7 @@ function submitData(newName, newEmail) {
     const errorMsg = error.message
     const ul = document.createElement('ul');
     const li = document.createElement('li');
-    li.innerHTML = "Unauthorized Access";
+    li.innerHTML = errorMsg;
     document.body.appendChild(ul);
     ul.appendChild(li);
     console.log(errorMsg);
