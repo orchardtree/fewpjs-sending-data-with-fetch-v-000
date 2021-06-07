@@ -30,10 +30,6 @@ function submitData(newName, newEmail) {
   return newUser;
 }
 
-function test() {
-  console.log(submitData(newName, newEmail))
-}
-
 
 /*
 fetchUsers(userUrl, configObj)
