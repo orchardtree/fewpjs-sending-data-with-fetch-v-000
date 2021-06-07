@@ -30,18 +30,12 @@ function submitData(newName, newEmail) {
           .then(resp => resp.json())
           .then(json => renderUsers(json.message));
 
-
-      if (true == true) {
         const ul = document.createElement('ul');
         const li = document.createElement('li');
         li.innerHTML = newUserId;
         document.body.appendChild(ul);
         ul.appendChild(li);
-      //} else {
-        //const li = document.createElement('li');
-        //li.innerHTML = newUserId;
-        //ul.appendChild(li);
-        }
+
     })
 
     .catch(function(error) {
