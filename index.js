@@ -21,7 +21,7 @@ function submitData(newName, newEmail) {
       return response.json();
     })
     .then(function(object) {
-      console.log(object.id);
+      console.log(object);
       const newUser = object;
       fetchUsers(newUser);
     })
