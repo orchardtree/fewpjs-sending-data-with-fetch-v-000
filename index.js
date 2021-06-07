@@ -23,7 +23,6 @@ function submitData(newName, newEmail) {
     .then(function(object) {
       console.log(object);
       const newUser = object;
-      fetchUsers(newUser);
     })
 
     .catch(function(error) {
