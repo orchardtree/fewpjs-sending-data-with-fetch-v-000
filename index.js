@@ -44,7 +44,7 @@ function renderListItem (item) {
   const ul = document.createElement('ul');
   const li = document.createElement('li');
   li.innerHTML = item;
-  document.body.appendChild(ul);
+  document.body.appendChild(ul).id = "TEST";
   ul.appendChild(li);
   console.log(item);
 }
