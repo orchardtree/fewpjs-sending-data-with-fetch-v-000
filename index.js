@@ -17,7 +17,7 @@ function submitData(newName, newEmail) {
   };
 
   function fetchUser() {
-    const test = fetch(userUrl, configObj)
+    return fetch(userUrl, configObj)
     .then(function(response) {
       return response.json();
     })
@@ -30,7 +30,6 @@ function submitData(newName, newEmail) {
       console.log(error.message);
       renderErrors(error)
     });
-    return test;
   }
 
   function renderUsers(newUser) {
