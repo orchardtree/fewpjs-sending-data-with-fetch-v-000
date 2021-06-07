@@ -39,7 +39,7 @@ function submitData(newName, newEmail) {
     document.body.appendChild(ul);
     ul.appendChild(li);
     console.log(newUserId);
-    return newUser
+    return newUser;
   }
   fetchUser();
 }
