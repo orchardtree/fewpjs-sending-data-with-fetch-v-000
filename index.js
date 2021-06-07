@@ -30,7 +30,7 @@ const newUser = function submitData(newName, newEmail) {
   return newUser;
 }
 
-
+newUser
 
 /*
 fetchUsers(userUrl, configObj)
