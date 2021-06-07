@@ -48,4 +48,3 @@ function renderListItem (item) {
   ul.appendChild(li);
   console.log(item);
 }
-}
