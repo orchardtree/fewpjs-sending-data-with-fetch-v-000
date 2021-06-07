@@ -21,7 +21,7 @@ function submitData(newName, newEmail) {
       return response.json();
     })
     .then(function(object) {
-      console.log(object);
+      //console.log(object);
     })
     .catch(function(error) {
       alert("Bad things! Ragnarők!");
