@@ -31,7 +31,7 @@ function submitData(newName, newEmail) {
     });
   }
 
-  function renderUsers(users) {
+  function renderUsers(newUser) {
     const newUserId = newUser.id;
     const ul = document.createElement('ul');
     const li = document.createElement('li');
