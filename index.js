@@ -40,7 +40,6 @@ function submitData(newName, newEmail) {
     ul.appendChild(li);
     console.log(newUserId);
     return newUserId;
-
   }
   fetchUser();
 }
