@@ -36,7 +36,7 @@ function submitData(newName, newEmail) {
 }
 
 function fetchUsers(userUrl, configObj) {
-  let users = fetch("http://localhost:3000/users")
+  let users = fetch(userUrl, configObj)
       .then(resp => resp.json())
       .then(json => renderUsers(json.message));
   return users;
