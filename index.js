@@ -34,7 +34,6 @@ function submitData(newName, newEmail) {
   }
 
 function fetchUsers(newUser) {
-  const newUserId = newUser.id;
   let users = fetch("http://localhost:3000/users")
       .then(resp => resp.json())
       .then(json => renderUsers(json.message));
@@ -42,6 +41,7 @@ function fetchUsers(newUser) {
   }
 
 function renderUsers(users) {
+  const newUserId = newUser.id;
   const ul = document.createElement('ul');
   const li = document.createElement('li');
   li.innerHTML = newUserId;
