@@ -30,7 +30,7 @@ function submitData(newName, newEmail) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
     });
-    //fetchUsers();
+    fetchUsers(newUser);
   }
 
 function fetchUsers(newUser) {
