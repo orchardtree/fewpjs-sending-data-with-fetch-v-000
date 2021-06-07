@@ -23,19 +23,7 @@ function submitData(newName, newEmail) {
     .then(function(object) {
       console.log(object.id);
       const newUser = object;
-      const newUserId = newUser.id;
-
-
-      let users = fetch("http://localhost:3000/users")
-          .then(resp => resp.json())
-          .then(json => renderUsers(json.message));
-
-        const ul = document.createElement('ul');
-        const li = document.createElement('li');
-        li.innerHTML = newUserId;
-        document.body.appendChild(ul);
-        ul.appendChild(li);
-
+      fetchUsers(newUser);
     })
 
     .catch(function(error) {
@@ -45,7 +33,8 @@ function submitData(newName, newEmail) {
     //fetchUsers();
   }
 
-function fetchUsers() {
+function fetchUsers(newUser) {
+  const newUserId = newUser.id;
   let users = fetch("http://localhost:3000/users")
       .then(resp => resp.json())
       .then(json => renderUsers(json.message));
