@@ -17,7 +17,7 @@ function submitData(newName, newEmail) {
   };
 
   function fetchUser() {
-    return fetch(userUrl, configObj)
+    fetch(userUrl, configObj)
     .then(function(response) {
       return response.json();
     })
@@ -51,5 +51,5 @@ function submitData(newName, newEmail) {
     ul.appendChild(li);
     console.log(errorMsg);
   }
-  fetchUser();
+  return fetchUser();
 }
