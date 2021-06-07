@@ -44,4 +44,3 @@ function renderUsers(users) {
   document.body.appendChild(ul);
   ul.appendChild(li);
   }
-
