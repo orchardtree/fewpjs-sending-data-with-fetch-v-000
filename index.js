@@ -24,7 +24,7 @@ function submitData(newName, newEmail) {
     //.then(function(object) {
     //  console.log(object);
     //})
-    .then(json => renderUsers(json.message));
+    .then(json => function(json.message));
     .catch(function(error) {
       alert("Bad things! Ragnarők!");
       console.log(error.message);
